@@ -4,9 +4,11 @@ import "../styles/CountryCard.css";
 const CountryCard = props => {
   const bcg = {
     backgroundImage: `url(${props.countryData.flag})`,
-    backgroundSize: "200px 200px",
+    backgroundSize: "200px auto",
     backgroundRepeat: "no-repeat",
-    backgroundColor: "white"
+    backgroundPosition: "center",
+    backgroundColor: "white",
+    cursor: "pointer"
   };
   return <div style={bcg} className="card" />;
 };
